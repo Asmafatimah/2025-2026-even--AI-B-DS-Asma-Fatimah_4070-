@@ -1,0 +1,161 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNf9SH3zX+e4Y0p8uhz/Jif",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Asmafatimah/2025-2026-even--AI-B-DS-Asma-Fatimah_4070-/blob/main/week1_03.02.2026\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Pd-Exa2u0qzf",
+        "outputId": "0317cf86-8bda-4403-9762-c3d6630d17e3"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 2, 3, 4, 5, 6]\n",
+            "[1, 2, 4, 5, 6]\n",
+            "[1, 2, 7, 4, 5, 6]\n",
+            "6\n"
+          ]
+        }
+      ],
+      "source": [
+        "#List\n",
+        "numbers = [1, 2, 3, 4, 5]\n",
+        "numbers.append(6)\n",
+        "print(numbers)\n",
+        "numbers.remove(3)\n",
+        "print(numbers)\n",
+        "numbers.insert(2, 7)\n",
+        "print(numbers)\n",
+        "print(len(numbers))\n",
+        "\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Tuples\n",
+        "colors = (\"red\", \"green\", \"blue\",\"yellow\",\"white\")\n",
+        "print(colors[0])\n",
+        "print(colors[1])\n",
+        "print(colors[3])\n",
+        "print(colors)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "mvxUeezF3Pz7",
+        "outputId": "05e0c05a-3dac-4c71-f7c1-9d6994fae3b5"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "red\n",
+            "green\n",
+            "yellow\n",
+            "('red', 'green', 'blue', 'yellow', 'white')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Dictionaries\n",
+        "student= {\n",
+        "    \"Name\": \"Sara\",\n",
+        "    \"Rollno\" : 70,\n",
+        "    \"Course\" : \"CSE-AI-B\"\n",
+        "}\n",
+        "print(\"Dictionary items:\")\n",
+        "for key,value in student.items():\n",
+        "  print(key,\":\",value)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0AL5i9gm34z3",
+        "outputId": "fe67ced8-e7ad-49d5-c8da-9548b47c0d31"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dictionary items:\n",
+            "Name : Sara\n",
+            "Rollno : 70\n",
+            "Course : CSE-AI-B\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Sets\n",
+        "set1 = {1,2,3,4,5}\n",
+        "set2 = {4,5,6,7,8}\n",
+        "print(\"Union:\", set1|set2)\n",
+        "print(\"Intersection:\", set1&set2)\n",
+        "print(\"Difference:\", set1-set2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "jbclxz0q5pOm",
+        "outputId": "54131334-2ccc-4b2b-e594-de5ccfc96b62"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Union: {1, 2, 3, 4, 5, 6, 7, 8}\n",
+            "Intersection: {4, 5}\n",
+            "Difference: {1, 2, 3}\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
